@@ -7,6 +7,7 @@ import {
   FaLeaf,
   FaBars,
   FaTimes,
+  FaDownload,
 } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -131,7 +132,13 @@ function HomePage() {
 
             <motion.div className="hero-buttons" initial={{ opacity: 0, y: 35 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.9, duration: 0.7 }}>
               <a href="#projects" className="btn">View Projects</a>
+
               <a href="#contact" className="btn btn-outline">Contact Me</a>
+
+              <a href="/Navindu_cv.pdf" download className="btn btn-outline">
+                <FaDownload style={{ marginRight: "8px" }} />
+                Download CV
+              </a>
             </motion.div>
           </motion.div>
 
