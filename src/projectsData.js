@@ -75,25 +75,15 @@ export const projects = [
     id: 5,
     title: "VERTIGREEN",
     shortDescription: "Smart vertical hydroponic system for sustainable urban farming.",
-    fullDescription: `VertiGreen – Automated Vertical Hydroponic System is an innovative smart farming solution developed to combine sustainability with modern technology.
-
-This system is designed to maximize crop production in limited spaces by using a vertical structure integrated with hydroponic and aquaponic principles.
-
-The project creates a balanced and self-sustaining ecosystem where plant growth and aquatic life work together. By recycling nutrients through water, VertiGreen significantly reduces waste while improving efficiency and productivity in urban agriculture environments.
-
-A key highlight of VertiGreen is the integration of real-time monitoring sensors, which continuously track critical water quality parameters such as pH, temperature, and electrical conductivity (EC). This ensures that plants always receive optimal growing conditions.
-
-The system also introduces a natural nutrient enhancement approach by incorporating seaweed-based nutrients, supporting healthy plant growth while maintaining a safe aquatic environment.
-
-To improve sustainability, VertiGreen is designed with an energy-efficient water circulation mechanism, reducing power consumption without compromising performance.
-
-Additionally, the project is being further developed towards IoT-based remote monitoring and control, enabling users to manage the system from anywhere.
-
-This project was successfully presented at the Pro Food Pro Pack & Agbiz Exhibition, showcasing its potential as a scalable solution for modern urban farming and sustainable food production.`,
+    fullDescription: `We are pleased to present our innovative project, “VERTIGREEN” – an Automated Vertical Hydroponic System, developed to address modern challenges in agriculture such as limited land availability, water scarcity, and the growing demand for sustainable food production.
+This system utilizes hydroponic technology, where plants are grown without soil using a nutrient-rich water solution. By adopting a vertical structure, the system maximizes space efficiency, making it ideal for urban environments and small-scale farming. The integration of automation enables precise control of essential parameters such as water flow, nutrient supply, and environmental conditions, ensuring optimal plant growth and higher productivity.
+VERTIGREEN is designed to be water-efficient, eco-friendly, and scalable, significantly reducing water usage compared to traditional farming methods while eliminating the need for harmful pesticides. The automated features minimize manual labor and allow continuous monitoring, making the system both efficient and user-friendly.
+By combining smart technology with sustainable agricultural practices, this project provides a practical solution for future food security and urban farming. It highlights the potential of modern innovations to transform conventional agriculture into a more efficient, reliable, and environmentally responsible system.
+`,
     cover: p5cover,
     images: [],
     video: p5video,
-    exhibition: "Pro Food Pro Pack & Agbiz Exhibition",
+    exhibition: "Pro Food Pro Pack & Agbiz Exhibition 2024",
     tech: ["Hydroponics", "Aquaponics", "IoT", "Sensors", "Automation"],
     isCollaborative: true,
     team: [
