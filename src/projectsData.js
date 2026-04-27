@@ -10,6 +10,9 @@ import p3video from "./assets/projects/project3/video1.mp4";
 import p4cover from "./assets/projects/project4/cover.jpg";
 import p4img1 from "./assets/projects/project4/photo1.jpg";
 
+import p5cover from "./assets/projects/project5/cover.png";
+import p5video from "./assets/projects/project5/video1.mp4";
+
 export const projects = [
   {
     id: 1,
@@ -21,18 +24,12 @@ export const projects = [
     images: [p1img1, p1img2],
     video: p1video,
     exhibition: "Pro Food Pro Pack Agri Biz 2025",
-    tech: [
-      "Plasma Technology",
-      "Water Purification",
-      "UV Treatment",
-      "Environmental Engineering",
-    ],
+    tech: ["Plasma Technology", "Water Purification", "UV Treatment"],
     isCollaborative: true,
     team: [
       "W.N.V. Weraniyagoda",
       "S.D. Koshitha Bhagya Tharaka",
       "W.A.R.K. Wickramasinghe",
-      "W.R.T.A. Bandara",
     ],
   },
 
@@ -46,13 +43,7 @@ export const projects = [
     images: [p3img1],
     video: p3video,
     exhibition: "Winner – Best Green Innovation | Pro Food Pro Pack Agri Biz 2024",
-    tech: [
-      "IoT",
-      "Arduino",
-      "Sensors",
-      "GPS",
-      "Water Quality Analysis",
-    ],
+    tech: ["IoT", "Arduino", "Sensors", "GPS", "Water Quality Analysis"],
     isCollaborative: true,
     team: [
       "W.N.V. Weraniyagoda",
@@ -71,18 +62,45 @@ export const projects = [
     images: [p4img1],
     video: null,
     exhibition: "Pro Food Pro Pack Agri Biz 2025",
-    tech: [
-      "Automation",
-      "Composting",
-      "Waste Management",
-      "Sustainability",
-    ],
+    tech: ["Automation", "Composting", "Waste Management", "Sustainability"],
     isCollaborative: true,
     team: [
       "W.N.V. Weraniyagoda",
       "S.D. Koshitha Bhagya Tharaka",
       "W.A.R.K. Wickramasinghe",
-      "G.K. Pasindu Dilhan",
+    ],
+  },
+
+  {
+    id: 5,
+    title: "VERTIGREEN",
+    shortDescription: "Smart vertical hydroponic system for sustainable urban farming.",
+    fullDescription: `VertiGreen – Automated Vertical Hydroponic System is an innovative smart farming solution developed to combine sustainability with modern technology.
+
+This system is designed to maximize crop production in limited spaces by using a vertical structure integrated with hydroponic and aquaponic principles.
+
+The project creates a balanced and self-sustaining ecosystem where plant growth and aquatic life work together. By recycling nutrients through water, VertiGreen significantly reduces waste while improving efficiency and productivity in urban agriculture environments.
+
+A key highlight of VertiGreen is the integration of real-time monitoring sensors, which continuously track critical water quality parameters such as pH, temperature, and electrical conductivity (EC). This ensures that plants always receive optimal growing conditions.
+
+The system also introduces a natural nutrient enhancement approach by incorporating seaweed-based nutrients, supporting healthy plant growth while maintaining a safe aquatic environment.
+
+To improve sustainability, VertiGreen is designed with an energy-efficient water circulation mechanism, reducing power consumption without compromising performance.
+
+Additionally, the project is being further developed towards IoT-based remote monitoring and control, enabling users to manage the system from anywhere.
+
+This project was successfully presented at the Pro Food Pro Pack & Agbiz Exhibition, showcasing its potential as a scalable solution for modern urban farming and sustainable food production.`,
+    cover: p5cover,
+    images: [],
+    video: p5video,
+    exhibition: "Pro Food Pro Pack & Agbiz Exhibition",
+    tech: ["Hydroponics", "Aquaponics", "IoT", "Sensors", "Automation"],
+    isCollaborative: true,
+    team: [
+      "W.N.V. Weraniyagoda",
+      "W.M.N.B Weerakoon",
+      "S.D. Koshitha Bhagya Tharaka",
+      "W.A.R.K. Wickramasinghe",
     ],
   },
 ];

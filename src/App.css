@@ -63,48 +63,23 @@ a {
 }
 
 @keyframes floatAround {
-  0% {
-    transform: translateY(0px) translateX(0px);
-  }
-  25% {
-    transform: translateY(-25px) translateX(20px);
-  }
-  50% {
-    transform: translateY(10px) translateX(-15px);
-  }
-  75% {
-    transform: translateY(-15px) translateX(10px);
-  }
-  100% {
-    transform: translateY(0px) translateX(0px);
-  }
+  0% { transform: translateY(0px) translateX(0px); }
+  25% { transform: translateY(-25px) translateX(20px); }
+  50% { transform: translateY(10px) translateX(-15px); }
+  75% { transform: translateY(-15px) translateX(10px); }
+  100% { transform: translateY(0px) translateX(0px); }
 }
 
 @keyframes floatMove {
-  0% {
-    transform: translateY(0px) translateX(0px);
-  }
-  50% {
-    transform: translateY(-20px) translateX(10px);
-  }
-  100% {
-    transform: translateY(0px) translateX(0px);
-  }
+  0% { transform: translateY(0px) translateX(0px); }
+  50% { transform: translateY(-20px) translateX(10px); }
+  100% { transform: translateY(0px) translateX(0px); }
 }
 
 @keyframes pulseGlow {
-  0% {
-    transform: scale(0.95);
-    opacity: 0.7;
-  }
-  50% {
-    transform: scale(1.05);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0.95);
-    opacity: 0.7;
-  }
+  0% { transform: scale(0.95); opacity: 0.7; }
+  50% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.7; }
 }
 
 /* navbar */
@@ -315,22 +290,18 @@ a {
   align-items: center;
   justify-content: center;
   gap: 8px;
-
   padding: 14px 26px;
   border-radius: 999px;
   border: 1px solid rgba(148, 163, 184, 0.28);
-
   background: rgba(255, 255, 255, 0.05);
   color: #e5e7eb;
   font-weight: 700;
   font-size: 15px;
-
   backdrop-filter: blur(10px);
   overflow: hidden;
   transition: all 0.35s ease;
 }
 
-/* glow layer */
 .btn::before {
   content: "";
   position: absolute;
@@ -342,14 +313,11 @@ a {
   z-index: -1;
 }
 
-/* hover effect */
 .btn:hover {
   color: #08111f;
   background: #22c55e;
   border-color: #22c55e;
-
   transform: translateY(-6px) scale(1.05);
-
   box-shadow:
     0 0 20px rgba(34, 197, 94, 0.5),
     0 18px 40px rgba(34, 197, 94, 0.25);
@@ -359,7 +327,6 @@ a {
   opacity: 1;
 }
 
-/* outline button */
 .btn-outline {
   background: rgba(255, 255, 255, 0.04);
   color: #e5e7eb;
@@ -433,7 +400,7 @@ a {
 /* projects */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   margin-top: 30px;
 }
@@ -656,7 +623,7 @@ a {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 30px;
-  align-items: center;
+  align-items: start;
   margin-bottom: 30px;
 }
 
@@ -668,6 +635,8 @@ a {
   padding: 34px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.22);
   text-align: left;
+  max-height: none;
+  overflow: visible;
 }
 
 .detail-tag {
@@ -680,16 +649,20 @@ a {
 
 .detail-text h1 {
   font-size: 46px;
-  line-height: 1.08;
-  margin-bottom: 16px;
+  line-height: 1.1;
+  margin-bottom: 20px;
   color: #ffffff;
 }
 
 .detail-description {
   color: #dbeafe;
-  line-height: 1.95;
-  font-size: 16px;
-  margin-bottom: 22px;
+  line-height: 1.45;
+  font-size: 14.8px;
+  margin-bottom: 10px;
+
+  white-space: normal;   /* 🔥 FIX */
+  word-break: break-word;
+  text-align: justify;   /* 🔥 optional nice look */
 }
 
 .detail-meta {
@@ -857,12 +830,11 @@ a {
   margin-bottom: 20px;
 }
 
-/* 🔥 MAIN FIX */
 .footer-icons {
   display: flex;
-  justify-content: center;   /* center align */
+  justify-content: center;
   align-items: center;
-  gap: 25px;                 /* space between icons */
+  gap: 25px;
   margin: 20px 0;
 }
 
@@ -888,6 +860,10 @@ a {
   .hero-content,
   .detail-hero {
     grid-template-columns: 1fr;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .hero-text,
@@ -970,6 +946,10 @@ a {
     gap: 30px;
   }
 
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
   .hero-text h1 {
     font-size: 38px;
   }
@@ -1039,4 +1019,25 @@ a {
     font-size: 14px;
     padding: 9px 15px;
   }
+
+  /* 🔥 FORCE FINAL OVERRIDE */
+.detail-hero {
+  gap: 16px !important;
+  margin-bottom: 16px !important;
+}
+
+.detail-text {
+  padding: 22px !important;
+}
+
+.detail-text h1 {
+  font-size: 42px !important;
+  margin-bottom: 10px !important;
+}
+
+.detail-description {
+  line-height: 1.45 !important;
+  font-size: 14.8px !important;
+  margin-bottom: 10px !important;
+}
 }

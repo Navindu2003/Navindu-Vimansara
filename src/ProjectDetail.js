@@ -7,11 +7,11 @@ function ProjectDetail() {
   const navigate = useNavigate();
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const project = projects.find((p) => p.id === parseInt(id, 10));
+  const project = projects.find((p) => p.id === Number(id));
 
   useEffect(() => {
-  window.scrollTo(0, 0);
-}, [id]);
+    window.scrollTo(0, 0);
+  }, [id]);
 
   const goToProjects = () => {
     sessionStorage.setItem("scrollToProjects", "true");
@@ -44,7 +44,10 @@ function ProjectDetail() {
           <div className="detail-text">
             <p className="detail-tag">PROJECT DETAILS</p>
             <h1>{project.title}</h1>
-            <p className="detail-description">{project.fullDescription}</p>
+
+            <p className="detail-description">
+              {project.fullDescription || project.shortDescription}
+            </p>
 
             <div className="detail-meta">
               <div className="meta-box">
@@ -63,7 +66,7 @@ function ProjectDetail() {
           </div>
         </div>
 
-        {project.isCollaborative && (
+        {project.isCollaborative && project.team?.length > 0 && (
           <div className="detail-section">
             <h2>Team Members</h2>
             <ul className="team-list">
@@ -74,31 +77,35 @@ function ProjectDetail() {
           </div>
         )}
 
-        <div className="detail-section">
-          <h2>Technologies / Key Areas</h2>
-          <div className="tech-grid">
-            {project.tech.map((item, index) => (
-              <div className="tech-pill" key={index}>
-                {item}
-              </div>
-            ))}
+        {project.tech?.length > 0 && (
+          <div className="detail-section">
+            <h2>Technologies / Key Areas</h2>
+            <div className="tech-grid">
+              {project.tech.map((item, index) => (
+                <div className="tech-pill" key={index}>
+                  {item}
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
 
-        <div className="detail-section">
-          <h2>Photo Gallery</h2>
-          <div className="detail-gallery">
-            {project.images.map((img, index) => (
-              <img
-                key={index}
-                src={img}
-                alt={`${project.title} ${index + 1}`}
-                className="gallery-image"
-                onClick={() => setSelectedImage(img)}
-              />
-            ))}
+        {project.images?.length > 0 && (
+          <div className="detail-section">
+            <h2>Photo Gallery</h2>
+            <div className="detail-gallery">
+              {project.images.map((img, index) => (
+                <img
+                  key={index}
+                  src={img}
+                  alt={`${project.title} ${index + 1}`}
+                  className="gallery-image"
+                  onClick={() => setSelectedImage(img)}
+                />
+              ))}
+            </div>
           </div>
-        </div>
+        )}
 
         {project.video && (
           <div className="detail-section">
