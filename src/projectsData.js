@@ -1,6 +1,7 @@
 import p1cover from "./assets/projects/project1/cover.jpg";
 import p1img1 from "./assets/projects/project1/photo1.jpg";
 import p1img2 from "./assets/projects/project1/photo2.jpg";
+import p1video from "./assets/projects/project1/lono.mp4";
 
 import p3cover from "./assets/projects/project3/cover.jpg";
 import p3img1 from "./assets/projects/project3/photo1.jpg";
@@ -18,7 +19,7 @@ export const projects = [
       "LONO PUREX is a plasma-based hybrid water purification and surface sterilization system developed as a compact, energy-efficient, and eco-friendly solution for improving water safety and hygiene. The system integrates plasma corona discharge, aeration, and ultraviolet (UV) irradiation into a single platform to generate highly reactive oxygen species such as hydroxyl radicals, atomic oxygen, ozone, and hydrogen peroxide. These reactive species effectively remove microbial pathogens, pesticide residues, and organic contaminants without producing harmful chemical by-products. Designed for practical and scalable applications, the system operates on low power and can be extended for household water purification, agricultural post-harvest washing, food processing, and healthcare sterilization. This project demonstrates the potential of plasma technology as a modern solution for environmental and food safety challenges.",
     cover: p1cover,
     images: [p1img1, p1img2],
-    video: null,
+    video: p1video,
     exhibition: "Pro Food Pro Pack Agri Biz 2025",
     tech: [
       "Plasma Technology",
