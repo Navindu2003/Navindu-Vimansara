@@ -5,6 +5,8 @@ import p1video from "./assets/projects/project1/lono.mp4";
 
 import p3cover from "./assets/projects/project3/cover.jpg";
 import p3img1 from "./assets/projects/project3/photo1.jpg";
+import p3img2 from "./assets/projects/project3/photo2.jpg";
+import p3img3 from "./assets/projects/project3/photo3.jpg";
 import p3video from "./assets/projects/project3/video1.mp4";
 
 import p4cover from "./assets/projects/project4/cover.jpg";
@@ -47,7 +49,7 @@ export const projects = [
     fullDescription:
       "AQUA INTEL is an innovative Arduino-based water quality measuring boat developed to monitor aquatic environments in a smart and efficient manner. The system is equipped with multiple sensors to measure key water quality parameters such as pH, temperature, electrical conductivity (EC), total dissolved solids (TDS), salinity, water depth, and visibility. It collects real-time data while navigating across water bodies, reducing the need for manual sampling and laboratory testing. With integrated GPS and communication modules, AQUA INTEL enables remote monitoring and accurate location tracking. This project provides a practical solution for environmental monitoring, early pollution detection, and sustainable water resource management, while demonstrating the integration of IoT, automation, and environmental science in a real-world application.",
     cover: p3cover,
-    images: [p3img1],
+    images: [p3img1, p3img2, p3img3],
     video: p3video,
     exhibition: "Winner – Best Green Innovation | Pro Food Pro Pack Agri Biz 2024",
     tech: ["IoT", "Arduino", "Sensors", "GPS", "Water Quality Analysis"],
