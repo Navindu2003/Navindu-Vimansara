@@ -75,7 +75,8 @@ export const projects = [
       "W.N.V. Weraniyagoda",
       "S.D. Koshitha Bhagya Tharaka",
       "W.A.R.K. Wickramasinghe",
-      "G.K. Pasindu Dilhan"
+      "G.K. Pasindu Dilhan",
+      "D.M.S.K. Dasanayake",
     ],
   },
 
